@@ -1,8 +1,8 @@
-import React, { Suspense, useState, useEffect } from 'react';
-import { Canvas } from '@react-three/fiber';
-import Model from './Model';
-import { SocialIcon } from 'react-social-icons';
-import { OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
+import React, { Suspense, useState, useEffect } from "react";
+import { Canvas } from "@react-three/fiber";
+import Model from "./Model";
+import { SocialIcon } from "react-social-icons";
+import { OrbitControls, PerspectiveCamera, Stars } from "@react-three/drei";
 
 function getWindowDimensions() {
   const { innerWidth: width, innerHeight: height } = window;
@@ -22,8 +22,8 @@ function useWindowDimensions() {
       setWindowDimensions(getWindowDimensions());
     }
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   return windowDimensions;
@@ -37,7 +37,7 @@ export default function App() {
       <img
         src="/gdsc.png"
         alt="Logo"
-        style={{ top: width / height < 1 ? '17%' : '8px' }}
+        style={{ top: width / height < 1 ? "17%" : "8px" }}
       />
       <Canvas dpr={[1.5, 2]} linear shadows>
         <ambientLight intensity={0.75} />
@@ -69,11 +69,13 @@ export default function App() {
         <SocialIcon
           className="social"
           url="https://sites.google.com/vt.edu/dscvt"
+          target="_blank"
         />
         <SocialIcon className="social" url="https://discord.gg/VgxWt3ZQva" />
         <SocialIcon
           className="social"
           url="https://www.linkedin.com/company/gdsc-vt/"
+          target="_blank"
         />
       </div>
     </>
