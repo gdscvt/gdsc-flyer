@@ -30,14 +30,14 @@ function useWindowDimensions() {
 }
 
 export default function App() {
-  const { width } = useWindowDimensions();
+  const { height, width } = useWindowDimensions();
   return (
     <>
       <div className="bg" />
       <img
         src="/gdsc.png"
         alt="Logo"
-        style={{ top: width < 500 ? '15%' : '8px' }}
+        style={{ top: width / height < 1 ? '17%' : '8px' }}
       />
       <Canvas dpr={[1.5, 2]} linear shadows>
         <ambientLight intensity={0.75} />
