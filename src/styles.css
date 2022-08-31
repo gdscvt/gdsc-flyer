@@ -44,8 +44,9 @@ img {
   position: absolute;
   pointer-events: none;
   transform: translate(-50%, 0);
+  width: min(100% - 16px, 952px);
   left: 50%;
-  top: 8px;
+  padding: 8px;
 }
 
 .icon-box {

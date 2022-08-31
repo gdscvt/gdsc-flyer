@@ -8,7 +8,7 @@ export default function App() {
   return (
     <>
       <div className="bg" />
-      <img src="/gdsc.png" alt="Logo" style={{ width: 952, height: 256 }} />
+      <img src="/gdsc.png" alt="Logo" />
       <Canvas dpr={[1.5, 2]} linear shadows>
         <ambientLight intensity={0.75} />
         <PerspectiveCamera makeDefault position={[0, 36, 0]} fov={75}>
