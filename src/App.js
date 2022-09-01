@@ -38,7 +38,7 @@ export default function App() {
         className="logo"
         src="/gdsc.png"
         alt="Logo"
-        style={{ top: width / height < 1 ? '10%' : '8px' }}
+        style={{ top: width / height < 1 ? '11%' : '8px' }}
       />
       <Canvas dpr={[1.5, 2]} linear shadows>
         <ambientLight intensity={0.75} />
