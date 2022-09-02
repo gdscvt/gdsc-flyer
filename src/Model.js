@@ -94,8 +94,6 @@ export default function Model(props) {
         <mesh
           castShadow
           receiveShadow
-          position={[0, 0, -1.25]}
-          scale={[1, 1, 0.25]}
           geometry={nodes.Object_14.geometry}
           material={materials.mat20}
         />
