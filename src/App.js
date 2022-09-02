@@ -9,7 +9,7 @@ export default function App() {
     <>
       <Canvas dpr={[1.5, 2]} linear shadows>
         <ambientLight intensity={0.75} />
-        <PerspectiveCamera makeDefault position={[0, 36, 0]} fov={75}>
+        <PerspectiveCamera makeDefault position={[0, 50, 0]} fov={75}>
           <pointLight intensity={1} position={[-10, -25, -10]} />
           <spotLight
             castShadow
@@ -28,8 +28,8 @@ export default function App() {
           autoRotate
           enablePan={false}
           enableZoom={false}
-          maxPolarAngle={Math.PI / 1.45}
-          minPolarAngle={Math.PI / 1.7}
+          maxPolarAngle={Math.PI / 1.6}
+          minPolarAngle={Math.PI / 1.9}
         />
       </Canvas>
       <img className="logo" src="/gdsc.png" alt="Logo" />
