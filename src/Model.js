@@ -1,4 +1,6 @@
 import { useGLTF } from '@react-three/drei';
+import * as THREE from 'three';
+import { useThree, useLoader } from '@react-three/fiber';
 
 /*
   "The Big G Building" (https://skfb.ly/69opQ) by naam is 
@@ -7,6 +9,13 @@ import { useGLTF } from '@react-three/drei';
   */
 export default function Model(props) {
   const { nodes, materials } = useGLTF('/the_big_g_building.glb');
+
+  const { scene } = useThree();
+  const texture = useLoader(THREE.TextureLoader, '/Lane.jpg');
+  texture.mapping = THREE.EquirectangularReflectionMapping;
+  texture.encoding = THREE.sRGBEncoding;
+  scene.background = texture;
+
   return (
     <group {...props} dispose={null}>
       <group position={[0, -10, 0]} rotation={[-Math.PI / 2, 0, 0]} scale={7}>
