@@ -39,7 +39,11 @@ export default function App() {
           url="https://sites.google.com/vt.edu/dscvt"
           target="_blank"
         />
-        <SocialIcon className="social" url="https://discord.gg/VgxWt3ZQva" />
+        <SocialIcon
+          className="social"
+          url="https://discord.gg/VgxWt3ZQva"
+          target="_blank"
+        />
         <SocialIcon
           className="social"
           url="https://www.linkedin.com/company/gdsc-vt/"
